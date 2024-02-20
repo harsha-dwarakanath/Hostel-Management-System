@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>SIGNUP PAGE</title>
+    <title>STUDENT REGISTER PAGE</title>
     <!-- meta tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,9 +11,11 @@
         Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design"
     />
     <!-- /meta tags -->
+
     <!-- custom style sheet -->
     <link href="web/css/style.css" rel="stylesheet" type="text/css" />
     <!-- /custom style sheet -->
+
     <!-- fontawesome css -->
     <link href="web/css/fontawesome-all.css" rel="stylesheet" />
     <!-- /fontawesome css -->
@@ -24,10 +26,11 @@
 
 </head>
 
+
 <body>
-    <h1>Hostel Room Allocation System</h1>
+    <h1>Register New Student Here</h1>
     <div class=" w3l-login-form">
-        <h2>Sign Up Here</h2>
+        <h2 tyle="text-transform:uppercase;font-family:'verdana,sans-serif';color:whitesmoke;"></h2>
         <form action="includes/signup.inc.php" method="POST">
 
             <div class=" w3l-form-group">
@@ -100,13 +103,8 @@
                     <input type="password" class="form-control" name="confirmpwd" placeholder="Confirm Password" required="required" />
                 </div>
             </div>
-            <!--<div class="forgot">
-                <a href="#">Forgot Password?</a>
-                <p><input type="checkbox">Remember Me</p>
-            </div>-->
-            <button type="submit" name="signup-submit">Sign Up</button>
+            <button type="submit" name="signup-submit">Register</button>
         </form>
-        <p class=" w3l-register-p">Already a member?<a href="index.php" class="register"> Login</a></p>
     </div>
 </body>
 

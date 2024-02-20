@@ -24,10 +24,11 @@
 
 </head>
 
-
 <body>
-    <img src="web/images/Logonew.png" alt="logo" class="logo" >
-    <h1>Hostel Room Allocation System</h1>
+    <div class="index-header">
+        <img src="web/images/Logonew.png" alt="logo" class="index-logo" >
+        <h1>Hostel Room Allocation System</h1>
+    </div>
     <div class=" w3l-login-form">
         <h2>Student Login</h2>
         <form action="includes/login.inc.php" method="POST">
@@ -48,17 +49,13 @@
             </div>
             <div class="forgot">
                 <a href="#">Forgot Password?</a>
-                <p><input type="checkbox">Remember Me</p>
+                <!-- <p><input type="checkbox">Remember Me</p> -->
             </div>
             <button type="submit" name="login-submit">Login</button>
         </form>
           <p class=" w3l-register-p">Login as<a href="login-hostel_manager.php" class="register"> Hostel-Manager/Admin</a></p>
         <p class=" w3l-register-p">Don't have an account?<a href="signup.php" class="register"> Sign up</a></p>
     </div>
-    <!-- <footer>
-        <p class="copyright-agileinfo"> &copy; 2020 DBMS Project. All Rights Reserved</p>
-    </footer> -->
-
 </body>
 
 </html>

@@ -8,7 +8,17 @@ A system built for hostel room and mess allocation and management. Implemented u
  4. Vacate Students from a room / mess
  5. View a list of all allocated students
 
+Student Login
+Roll No:YTESTER1
+Name: Tester One
+pwd: Test@123
 
+admin:administrator
+password: trial
+
+hostel manager
+id: hostela
+pswd: hostel@a
 
 
 

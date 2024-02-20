@@ -1,4 +1,4 @@
-CREATE DATABASE  IF NOT EXISTS `hostel_management_system` /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE DATABASE  IF NOT EXISTS `hostel_management_system`;
 USE `hostel_management_system`;
 -- MySQL dump 10.13  Distrib 5.7.30, for Linux (x86_64)
 --
@@ -324,7 +324,6 @@ DELIMITER ;
 --
 -- Table structure for table `Student`
 --
-
 DROP TABLE IF EXISTS `Student`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
@@ -335,7 +334,7 @@ CREATE TABLE `Student` (
   `Mob_no` varchar(255) NOT NULL,
   `Dept` varchar(255) NOT NULL,
   `Year_of_study` varchar(255) NOT NULL,
-  `Pwd` longtext NOT NULL,
+  `Pwd` varchar(20) NOT NULL,
   `Hostel_id` int(10) DEFAULT NULL,
   `Room_id` int(10) DEFAULT NULL,
   `Mess_id` int(10) DEFAULT NULL,

@@ -1,25 +1,15 @@
-html {
-    height: 100%;
-}
+
 body {
     margin: 0;
     padding: 0;
-    background: url(../images/cover4.jpg) no-repeat;
+    background: url(../images/login-bg.jpg) no-repeat;
     height: 100%;
     background-size: cover;
+    background-attachment:fixed ;
     font-family: 'Raleway', sans-serif;
 }
-.logo{
-    width: 200px;
-    height: 200px;
-    float: right;
-    border-radius: 30px;
-    position:absolute;
-    right:20px;
-    top:30px;
-  }
 h1 {
-    margin: 0;
+    margin: 0; 
     color: whitesmoke;
     text-align: center;
     -webkit-text-stroke: 1px #000000;
@@ -28,10 +18,23 @@ h1 {
     letter-spacing: 2px;
     padding: 50px 0;
 }
-
+.index-logo{
+    width: 200px;
+    height: 200px;
+    float: right;
+    border-radius: 30px;
+    position:absolute;
+    right:20px;
+    top:30px;
+  }
+.index-logo:hover{
+    border: 1px solid black;
+    box-shadow: 0 0 13px 2px rgba(0, 0, 0, 0.7);
+}
 h2 {
     margin: 0;
-    color: #fc3955;
+    /* color: #fc3955; */
+    color: #00BCD4;
     font-size: 35px;
     /* -webkit-text-stroke: 0.7px #000000; */
     font-weight: 400;
@@ -39,8 +42,7 @@ h2 {
     letter-spacing: 1px;
     padding-bottom: 30px;
 }
-
-p.w3l-register-p {
+.w3l-register-p {
     color: #eee;
     font-size: 13px;
     text-align: center;
@@ -48,14 +50,39 @@ p.w3l-register-p {
 }
 
 .w3l-login-form {
-    background: rgba(0, 0, 0, 0.6117647058823529);
+    background: rgba(0, 0, 0, 0.6);
     max-width: 500px;
     margin: 0 auto;
     padding: 3em;
     border-radius: 10px;
     box-sizing: border-box;
 }
-
+/* .date {
+    width: 49.5%;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    color: white;
+    position: relative;
+    text-align: center;
+    background-color: #f91d04;
+    -moz-box-shadow: 0px 0px 7px #777777;
+    -webkit-box-shadow: -5px 0px 7px #777777;
+    box-shadow: 0px 0px 7px #777777;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    pointer-events: none;
+  }
+  input[type="date"] {
+    position: absolute;
+    left: 0;
+    width: 49.5%;
+    height: 50px;
+    z-index: -1;
+    border: none;
+    outline: none;
+} */
 .group {
     display: flex;
     padding: 15px 5px;
@@ -63,7 +90,8 @@ p.w3l-register-p {
 }
 
 .group i {
-    color: #fc3955;
+    /* color: #fc3955; */
+    color: #00BCD4;
     font-size: 20px;
     padding: 0 10px;
 }
@@ -99,7 +127,8 @@ input[type="password"]:focus {
 }
 
 button {
-    background: #fc3955;
+    /* background: #fc3955; */
+    background: #00BCD4;
     color: #ffffff;
     font-size: 13px;
     text-transform: uppercase;

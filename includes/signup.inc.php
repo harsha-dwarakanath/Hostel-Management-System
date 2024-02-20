@@ -9,6 +9,7 @@ if (isset($_POST['signup-submit'])) {
   $lname = $_POST['student_lname'];
   $mobile = $_POST['mobile_no'];
   $dept = $_POST['department'];
+  $mail = $_POST['mail'];
   $year = $_POST['year_of_study'];
   $password = $_POST['pwd'];
   $cnfpassword = $_POST['confirmpwd'];
@@ -40,7 +41,7 @@ if (isset($_POST['signup-submit'])) {
         exit();
       }
       else {
-        $sql = "INSERT INTO Student (Student_id, Fname, Lname, Mob_no, Dept, Year_of_study, Pwd) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO Student (Student_id, Fname, Lname, Mob_no, Mail, Dept, Year_of_study, Pwd) VALUES (?, ?, ?, ?,?, ?, ?, ?)";
         $stmt = mysqli_stmt_init($conn);
         if(!mysqli_stmt_prepare($stmt, $sql)){
           echo"<script>window.location='../signup.php'</script>";
@@ -48,9 +49,9 @@ if (isset($_POST['signup-submit'])) {
         }
         else {
 
-          $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
+          // $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
 
-          mysqli_stmt_bind_param($stmt, "sssssss",$roll, $fname, $lname, $mobile, $dept, $year, $hashedPwd);
+          mysqli_stmt_bind_param($stmt, "ssssssss",$roll, $fname, $lname, $mobile,$mail, $dept, $year, $password);
           mysqli_stmt_execute($stmt);
           echo"<script>window.location='../index.php'</script>";
           exit();

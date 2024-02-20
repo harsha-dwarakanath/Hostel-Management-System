@@ -61,7 +61,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container agile-banner_nav">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-				<h1><a class="navbar-brand" href="admin_home.php">NITK <span class="display"> </span></a></h1>
+				<!-- <h1><a class="navbar-brand" href="admin_home.php">Hostel Management System<span class="display"> </span></a></h1> -->
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
@@ -91,8 +91,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</header>
 	<!--Header-->
-<br><br><br><br><br>
-	<div class="main">
+
+	<div class="main" style="margin-top:4em ;">
 		<div id="navigation" style="display:none;" class="w3_agile">
 
 		</div>

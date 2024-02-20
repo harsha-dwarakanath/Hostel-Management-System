@@ -1,7 +1,7 @@
 <?php
 session_start();
   require '../includes/config.inc.php';
-
+  error_reporting(0);//hide error message in website
 ?>
 
 <!DOCTYPE html>
@@ -47,8 +47,8 @@ session_start();
 	<header>
 		<div class="container agile-banner_nav">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<img src="../web/images/logo-title.png" alt="logo" class="logo-home" >
 
-				<h1><a class="navbar-brand" href="admin_home.php">NITK <span class="display"> </span></a></h1>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
@@ -164,14 +164,8 @@ session_start();
 <div class="container">
 <h2 class="heading text-capitalize mb-sm-5 mb-4"> Students Details</h2>
 <?php
-   //$hostel_id = $_SESSION['hostel_id'];
    $query1 = "SELECT * FROM Student";
    $result1 = mysqli_query($conn,$query1);
-   //select the hostel name from hostel table
-   //$query6 = "SELECT * FROM Hostel WHERE Hostel_id = '$hostel_id'";
-   //$result6 = mysqli_query($conn,$query6);
-   //$row6 = mysqli_fetch_assoc($result6);
-   //$hostel_name = $row6['Hostel_name'];
 ?>
 
   <table class="table table-hover">
@@ -201,12 +195,12 @@ session_start();
             $query99 = "SELECT * FROM Hostel WHERE Hostel_id = '$HID'";
             $result99 = mysqli_query($conn,$query99);
             $row99 = mysqli_fetch_assoc($result99);
-            $HNM = $row99['Hostel_name'];
+         	$HNM = $row99['Hostel_name'];
             if (!$HNM) {
-              $HNM='None';
+              $HNM='NA';
             }
             if(!$room_no){
-              $room_no='None';
+              $room_no='NA';
             }
             //student name
             $student_name = $row1['Fname']." ".$row1['Lname'];
@@ -221,37 +215,6 @@ session_start();
 <br>
 <br>
 <br>
-
-<!-- footer -->
-<footer class="py-5">
-	<div class="container py-md-5">
-		<div class="footer-logo mb-5 text-center">
-			<a class="navbar-brand" href="http://www.nitk.ac.in/" target="_blank">NITK <span class="display"> SURATHKAL</span></a>
-		</div>
-		<div class="footer-grid">
-
-			<div class="list-footer">
-				<ul class="footer-nav text-center">
-					<li>
-						<a href="admin_home.php">Home</a>
-					</li>
-
-					<li>
-						<a href="create_hm.php">Appoint</a>
-					</li>
-					<li>
-						<a href="students.php">Students</a>
-					</li>
-					<li>
-						<a href="admin_profile.php">Profile</a>
-					</li>
-				</ul>
-			</div>
-
-		</div>
-	</div>
-</footer>
-<!-- footer -->
 
 <!-- js-scripts -->
 

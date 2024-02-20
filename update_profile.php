@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>SIGNUP PAGE</title>
+    <title>UPDATE PAGE</title>
     <!-- meta tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,19 +24,11 @@
 
 </head>
 
-<body>
-    <h1>Hostel Room Allocation System</h1>
-    <div class=" w3l-login-form">
-        <h2>Sign Up Here</h2>
-        <form action="includes/signup.inc.php" method="POST">
 
-            <div class=" w3l-form-group">
-                <label>Student Roll No</label>
-                <div class="group">
-                    <i class="fas fa-id-badge"></i>
-                    <input type="text" class="form-control" name="student_roll_no" placeholder="Roll No" required="required" />
-                </div>
-            </div>
+<body>
+    <div class=" w3l-login-form">
+        <h2 style="text-transform:uppercase;font-family:'verdana,sans-serif';color:whitesmoke;">Welcome<br><?php echo $_SESSION['roll']; ?></h2>
+        <form action="includes/update.inc.php" method="POST">
             <div class=" w3l-form-group">
                 <label>First Name</label>
                 <div class="group">
@@ -50,14 +42,7 @@
                     <i class="fas fa-user"></i>
                     <input type="text" class="form-control" name="student_lname" placeholder="Last Name" required="required" />
                 </div>
-            </div>
-            <!-- <div class=" w3l-form-group">
-                <label>Date of Birth</label>
-                <div class="group">
-                <i class="fas fa-calendar"></i>
-                    <input type="date" id="date" class="form-control" name="dob" placeholder="Date of Birth"/>
-                </div>
-            </div> -->
+            </div> 
             <div class=" w3l-form-group">
                 <label>Mobile No</label>
                 <div class="group">
@@ -72,13 +57,13 @@
                     <input type="text" class="form-control" name="mail" placeholder="Email" required="required" />
                 </div>
             </div>
-            <div class=" w3l-form-group">
+            <!--<div class=" w3l-form-group">
                 <label>Department</label>
                 <div class="group">
                     <i class="fas fa-graduation-cap"></i>
                     <input type="text" class="form-control" name="department" placeholder="Department" required="required" />
                 </div>
-            </div>
+            </div>-->
             <div class=" w3l-form-group">
                 <label>Year of Study</label>
                 <div class="group">
@@ -86,13 +71,17 @@
                     <input type="text" class="form-control" name="year_of_study" placeholder="Year of Study" required="required" />
                 </div>
             </div>
-            <div class=" w3l-form-group">
+
+
+
+            <!--<div class=" w3l-form-group">
                 <label>Password:</label>
                 <div class="group">
                     <i class="fas fa-unlock"></i>
-                    <input type="password" class="form-control" name="pwd" placeholder="Password" required="required" https://github.com/veenanitk/DBMS-Project.git/>
+                    <input type="password" class="form-control" name="pwd" placeholder="Password" required="required">
                 </div>
             </div>
+
             <div class=" w3l-form-group">
                 <label>Confirm Password:</label>
                 <div class="group">
@@ -100,14 +89,16 @@
                     <input type="password" class="form-control" name="confirmpwd" placeholder="Confirm Password" required="required" />
                 </div>
             </div>
-            <!--<div class="forgot">
+            <div class="forgot">
                 <a href="#">Forgot Password?</a>
                 <p><input type="checkbox">Remember Me</p>
             </div>-->
-            <button type="submit" name="signup-submit">Sign Up</button>
-        </form>
+            <button type="submit" name="update-submit">Update profile</button>
+       <!-- </form>
         <p class=" w3l-register-p">Already a member?<a href="index.php" class="register"> Login</a></p>
     </div>
+    -->
+
 </body>
 
 </html>

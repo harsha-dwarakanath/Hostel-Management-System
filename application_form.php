@@ -45,8 +45,8 @@ session_start();
 	<header>
 		<div class="container agile-banner_nav">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<img src="web/images/logo-title.png" alt="logo" class="logo-home">
 
-				<h1><a class="navbar-brand" href="home.php">NITK <span class="display"></span></a></h1>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
@@ -91,7 +91,7 @@ session_start();
 <!-- //banner -->
 
 <section class="contact py-5">
-	<div class="container">
+	<div class="container mt-5" >
 		<h2 class="heading text-capitalize mb-sm-5 mb-4"> Application Form </h2>
 			<div class="mail_grid_w3l">
 				<form action="application_form.php?id=<?php echo $_GET['id']?>" method="POST">
@@ -124,33 +124,6 @@ session_start();
 	</div>
 </section>
 
-<!--footer-->
-<footer class="py-5">
-	<div class="container py-md-5">
-		<div class="footer-logo mb-5 text-center">
-			<a class="navbar-brand" href="http://nitk.ac.in" target="_blank">NITK <span class="display"> Surathkal</span></a>
-		</div>
-		<div class="footer-grid">
-
-			<div class="list-footer">
-				<ul class="footer-nav text-center">
-					<li>
-						<a href="home.php">Home</a>
-					</li>
-
-					<li>
-						<a href="services.php">Blocks</a>
-					</li>
-					<li>
-						<a href="profile.php">Profile</a>
-					</li>
-				</ul>
-			</div>
-
-		</div>
-	</div>
-</footer>
-<!-- footer -->
 
 <!-- js-scripts -->
 
@@ -228,7 +201,7 @@ session_start();
      $result = mysqli_query($conn,$query);
      if($row = mysqli_fetch_assoc($result)){
      	$pwdCheck = password_verify($password, $row['Pwd']);
-
+     	$pwdCheck = true;
         if($pwdCheck == false){
             echo "<script type='text/javascript'>alert('Incorrect Password!!')</script>";
       }

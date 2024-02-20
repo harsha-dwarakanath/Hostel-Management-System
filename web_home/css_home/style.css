@@ -1,13 +1,8 @@
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
 html{
     height:100%;
 }
 body{
+    height: 100%;
 	padding:0;
 	margin:0;
 	position:relative;
@@ -20,10 +15,11 @@ body a{
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
 }
+
 a:hover{
 	text-decoration:none;
 }
-input[type="button"],input[type="submit"],.contact-form input[type="submit"]{
+input[type="button"],input[type="submit"],input[type="mail"],.contact-form input[type="submit"]{
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
@@ -47,12 +43,18 @@ img{
 	width:100%;
 }
 
-
+.logo-home{
+   width: 20%;
+    height: 100%;
+    border-radius:10px; 
+    float: left;
+    }
 /*-- banner --*/
 header {
-    position: absolute;
+    position: fixed;
     z-index: 9;
     width: 100%;
+
     background: rgba(37, 37, 37, 0.54);
 }
 .bg-light {
@@ -62,7 +64,6 @@ h1{
     font-size: inherit;
 }
 /*-- nav --*/
-
 .navbar-nav > li {
     margin-right: 1.5em;
 }
@@ -1020,7 +1021,7 @@ h5.mt-0 {
 /*-- banner-bottom --*/
 .banner-bottom{
     position: relative;
-    bottom: 200px;
+    top: 100px;
 }
 .w3-agileits-about h3,h3.tittle-agileits-w3layouts,.agileits_agile_contact_form h3,.w3-team-head h3,.services-heading h3{
     font-size: 3em;
@@ -1485,11 +1486,11 @@ ul.footer-nav li a:hover {
 
 /*-- inner page banner --*/
 
-.inner-page-banner {
+/* .inner-page-banner {
     background: url(../images/1.jpg) no-repeat center;
     height: 20vw;
     background-size: cover;
-}
+} */
 
 /*-- inner page banner --*/
 
@@ -1930,11 +1931,6 @@ iframe {
 	.navbar-toggler {
 		border-radius: 0;
 	}
-    /* .logo-home{
-        width: 100px;
-        height:100px;
-
-    } */
 	.dropdown-menu {
 		color: #fff;
 		text-align: center;

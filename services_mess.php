@@ -52,8 +52,9 @@
 	<header>
 		<div class="container agile-banner_nav">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<img src="web/images/logo-title.png" alt="logo" class="logo-home" >
 
-				<h1><a class="navbar-brand" href="home.php">NITK<span class="display"></span></a></h1>
+				<!-- <h1><a class="navbar-brand" href="home.php">NITK<span class="display"></span></a></h1> -->
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
@@ -199,41 +200,6 @@
 	</div>
 </div>
 
-<!-- team -->
-
-<!-- //team -->
-
-<!-- footer -->
-<footer class="py-5">
-	<div class="container py-md-5">
-		<div class="footer-logo mb-5 text-center">
-			<a class="navbar-brand" href="http://www.nitk.ac.in/" target="_blank">NITK <span class="display"> SURATHKAL</span></a>
-		</div>
-		<div class="footer-grid">
-
-			<div class="list-footer">
-				<ul class="footer-nav text-center">
-					<li>
-						<a href="home.php">Home</a>
-					</li>
-
-					<li>
-						<a href="services_mess.php">Hostels</a>
-					</li>
-					<li>
-						<a href="profile.php">Profile</a>
-					</li>
-
-					<li>
-						<a href="profile.php">Mess</a>
-					</li>
-				</ul>
-			</div>
-
-		</div>
-	</div>
-</footer>
-<!-- footer -->
 
 <!-- js-scripts -->
 

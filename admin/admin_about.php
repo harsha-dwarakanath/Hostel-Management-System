@@ -41,7 +41,7 @@
 		<div class="container agile-banner_nav">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-				<h1><a class="navbar-brand" href="admin_home">NITK <span class="display"></span></a></h1>
+				<!-- <h1><a class="navbar-brand" href="admin_home">NITK <span class="display"></span></a></h1> -->
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
@@ -229,9 +229,9 @@
 					</li>
 				</ul>
 			</div>
-			<div class="agileits_w3layouts-copyright mt-4 text-center">
+			<!-- <div class="agileits_w3layouts-copyright mt-4 text-center">
 				<p>© 2019 Intrend. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="=_blank"> W3layouts </a></p>
-		</div>
+		</div> -->
 		</div>
 	</div>
 </footer>
